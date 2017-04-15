@@ -3,9 +3,26 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
     "http://struts.apache.org/dtds/struts-2.3.dtd">
     <struts>
+    	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
      	<package name="default" extends="struts-default">
+<!-- ********************测试************************ -->
      		<action name="hello" class="com.exam.action.HelloAction" method="execute">
      			<result name="success">success.jsp</result>
      		</action>
+     		
+<!-- ********************登陆************************ -->
+     		<action name="login" class="com.exam.action.LoginAction" method="execute">
+     			<result name="teacher" type="redirect">teacher.jsp</result>
+     			<result name="student" type="redirect">student.jsp</result>
+     		</action>
+     		
+<!-- ********************上传文件************************ -->
+     		<action name="upload" class="com.exam.action.FileUpload" method="execute">
+     			<result name="success" type="redirect">tips.jsp</result>
+     		</action>
+     		
+     		<action name="common" class="com.exam.action.CommonAction">
+        		<result name="listSuccess">/test.jsp</result> 
+       		 </action>
      	</package>
     </struts>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
-    <title>后台管理中心</title>  
+    <title>学生端</title>  
     <link rel="stylesheet" href="css/pintuer.css">
     <link rel="stylesheet" href="css/admin.css">
     <script src="js/jquery.js"></script>   
@@ -16,7 +16,7 @@
   <div class="logo margin-big-left fadein-top">
     <h1><img src="images/x.jpg" class="radius-circle rotate-hover" height="50" alt="" />学生端</h1>
   </div>
-  <div class="head-l"><a class="button button-little bg-green" href="" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;<a class="button button-little bg-red" href="login.html"><span class="icon-power-off"></span> 退出登录</a> </div>
+  <div class="head-l"><a class="button button-little bg-green" href="" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;<a class="button button-little bg-red" href="index.jsp"><span class="icon-power-off"></span> 退出登录</a> </div>
 </div>
 <div class="leftnav">
   <div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
@@ -28,8 +28,8 @@
     <li><a href="adv.html" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>   
     <li><a href="book.html" target="right"><span class="icon-caret-right"></span>留言管理</a></li>     
     <li><a href="column.html" target="right"><span class="icon-caret-right"></span>栏目管理</a></li> -->
-	 <li><a href="column.jsp" target="right"><span class="icon-caret-right"></span>查看本次考试情况</a></li>
-	 <li><a href="column2.jsp" target="right"><span class="icon-caret-right"></span>分析历史考试情况</a></li>
+     <li><a href="report.jsp" target="right"><span class="icon-caret-right"></span>成绩单</a></li>
+	 <li><a href="studentkey.jsp" target="right"><span class="icon-caret-right"></span>对比参考答案</a></li>
 
   </ul>   
   <!--<h2><span class="icon-pencil-square-o"></span>栏目管理</h2>

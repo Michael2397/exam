@@ -18,7 +18,7 @@
 </head>
 
 <body>
-	<input type="text" placeholder="请输入搜索关键字" name="keywords" id="search" class="input" style="width:250px; line-height:17px;display:inline-block" />
+	<input type="text" placeholder="请输入考试名称和时间" name="keywords" id="search" class="input" style="width:250px; line-height:17px;display:inline-block" />
  	<a href="javascript:void(0)" class="button border-main icon-search"  onclick="getSearch()" > 搜索</a></li>
 <div id="table"></div>
 <script type="text/javascript">

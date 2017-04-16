@@ -19,7 +19,7 @@ import com.opensymphony.xwork2.ActionSupport;
  *
  * 2017年4月15日
  */
-public class FileUpload extends ActionSupport {
+public class FileUploadRAR extends ActionSupport {
 	//对应于表单
 	private File file;
 	//文件名
@@ -93,15 +93,7 @@ public class FileUpload extends ActionSupport {
 		File destFile = new File(path,fileFileName);
 		//把上传的文件，拷贝到目标文件中
 		FileUtils.copyFile(file, destFile);
-		
-		//调用InputKey类中的方法,获取答案
-		ArrayList<String> key = InputKey.getKey(destFile);
-/*		//获取分值
-		ArrayList<String> score = InputKey.getScore(destFile);*/
-		//创建数据库表
-		InputKey.createTable(examName, examTime);
-		//将答案导入到数据库中
-		InputKey.inputKey(examName, examTime, key);
+
 		
 		return SUCCESS;
 	}

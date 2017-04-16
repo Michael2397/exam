@@ -20,9 +20,15 @@
      		<action name="upload" class="com.exam.action.FileUpload" method="execute">
      			<result name="success" type="redirect">tips.jsp</result>
      		</action>
+     		<action name="uploadrar" class="com.exam.action.FileUploadRAR" method="execute">
+     			<result name="success" type="redirect">tips.jsp</result>
+     		</action>
      		
+     		
+<!-- ********************动态绑定************************ -->
      		<action name="common" class="com.exam.action.CommonAction">
         		<result name="listSuccess">/test.jsp</result> 
        		 </action>
+     
      	</package>
     </struts>
